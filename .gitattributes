@@ -1,16 +1,10 @@
-# Set the default behavior, in case people don't have core.autocrlf set.
+# Handle line endings for text files
 * text=auto
 
-# Declare files that will always have CRLF line endings on checkout.
-*.bat text eol=crlf
-*.cmd text eol=crlf
+# Ignore line endings for binary files
+*.jpg -text
+*.png -text
+*.gif -text
 
-# Declare files that will always have LF line endings on checkout.
-*.sh text eol=lf
-*.js text eol=lf
-*.jsx text eol=lf
-*.ts text eol=lf
-*.tsx text eol=lf
-*.html text eol=lf
-*.css text eol=lf
-*.md text eol=lf
+# Ignore line endings for node_modules
+node_modules/* -text
