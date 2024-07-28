@@ -1,0 +1,10 @@
+# Handle line endings for text files
+* text=auto
+
+# Ignore line endings for binary files
+*.jpg -text
+*.png -text
+*.gif -text
+
+# Ignore line endings for node_modules
+node_modules/* -text
