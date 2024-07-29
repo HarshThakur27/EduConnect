@@ -1,4 +1,4 @@
-const BASE_URL = "https://educonnect-txl7.onrender.com/api/v1"
+const BASE_URL = "https://educonnect-9rr0.onrender.com/api/v1"
 
 // AUTH ENDPOINTS
 export const endpoints = {
