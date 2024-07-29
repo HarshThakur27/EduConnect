@@ -9,7 +9,7 @@ const courseRoutes = require("./routes/Course");
 const database = require("./config/database");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
-const { cloudinaryConnect } = require("./config/cloudinary");
+const {cloudinaryConnect } = require("./config/cloudinary");
 const fileUpload = require("express-fileupload");
 const dotenv = require("dotenv");
 
@@ -21,32 +21,19 @@ database.connect();
 //middlewares
 app.use(express.json());
 app.use(cookieParser());
-
-const allowedOrigins = [
-  "http://localhost:3000",
-  "https://edu-connect-mauve.vercel.app"
-];
+app.use(
+	cors({
+		origin:"*",
+		credentials:true,
+	})
+)
 
 app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin) return callback(null, true);
-      if (allowedOrigins.indexOf(origin) === -1) {
-        const msg = "The CORS policy for this site does not allow access from the specified Origin.";
-        return callback(new Error(msg), false);
-      }
-      return callback(null, true);
-    },
-    credentials: true,
-  })
-);
-
-app.use(
-  fileUpload({
-    useTempFiles: true,
-    tempFileDir: "/tmp",
-  })
-);
+	fileUpload({
+		useTempFiles:true,
+		tempFileDir:"/tmp",
+	})
+)
 //cloudinary connection
 cloudinaryConnect();
 
@@ -56,16 +43,17 @@ app.use("/api/v1/profile", profileRoutes);
 app.use("/api/v1/course", courseRoutes);
 // app.use("/api/v1/payment", paymentRoutes);
 
+
 //def route
 
 app.get("/", (req, res) => {
-  return res.json({
-    success: true,
-    message: 'Your server is up and running....'
-  });
+	return res.json({
+		success:true,
+		message:'Your server is up and running....'
+	});
 });
 
 app.listen(PORT, () => {
-  console.log(`App is running at ${PORT}`)
+	console.log(`App is running at ${PORT}`)
 })
 
