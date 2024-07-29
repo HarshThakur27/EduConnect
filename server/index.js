@@ -24,7 +24,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://edu-connect-swart.vercel.app"
+  "https://edu-connect-mauve.vercel.app"
 ];
 
 app.use(
