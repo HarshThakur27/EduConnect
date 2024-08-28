@@ -13,7 +13,7 @@ import InstructorSection from '../components/core/HomePage/InstructorSection'
 import Footer from '../components/common/Footer'
 import ExploreMore from "../components/core/HomePage/ExploreMore"
 // import reviews from "../Data1";
-import Testimonal from './Testimonal'
+// import Testimonal from './Testimonal'
 const Home = () => {
     // useEffect(() => {
     //     const script1 = document.createElement("script");
