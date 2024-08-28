@@ -12,7 +12,7 @@ import LearningLanguageSection from '../components/core/HomePage/LearningLanguag
 import InstructorSection from '../components/core/HomePage/InstructorSection'
 import Footer from '../components/common/Footer'
 import ExploreMore from "../components/core/HomePage/ExploreMore"
-import reviews from "../Data1";
+// import reviews from "../Data1";
 import Testimonal from './Testimonal'
 const Home = () => {
     useEffect(() => {
@@ -193,9 +193,9 @@ const Home = () => {
 
             
       </div>
-      <div className="container mx-auto py-8">
+{/*       <div className="container mx-auto py-8">
           <Testimonal reviews={reviews} />
-        </div>
+        </div> */}
 
       {/*Footer */}
       <Footer />
