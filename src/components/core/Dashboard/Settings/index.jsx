@@ -16,7 +16,7 @@ export default function Settings() {
       {/* Password */}
       <UpdatePassword />
       {/* Delete Account */}
-      <DeleteAccount />
+      {/* <DeleteAccount /> */}
     </>
   )
 }

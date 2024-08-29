@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
 import { useForm } from "react-hook-form"
 
-import CountryCode from "../../data/countrycode.json"
-import { apiConnector } from "../../services/apiConnector"
+// import CountryCode from "../../data/countrycode.json"
+import { apiConnector } from "../../services/apiconnector"
 import { contactusEndpoint } from "../../services/apis"
 
 const ContactUsForm = () => {
@@ -101,10 +101,11 @@ const ContactUsForm = () => {
         )}
       </div>
 
-      <div className="flex flex-col gap-2">
+      {/* <div className="flex flex-col gap-2">
         <label htmlFor="phonenumber" className="lable-style">
           Phone Number
         </label>
+        <input type ="number" name="number"></input>
 
         <div className="flex gap-5">
           <div className="flex w-[81px] flex-col gap-2">
@@ -124,8 +125,8 @@ const ContactUsForm = () => {
                 )
               })}
             </select>
-          </div>
-          <div className="flex w-[calc(100%-90px)] flex-col gap-2">
+          </div> 
+          { <div className="flex w-[calc(100%-90px)] flex-col gap-2">
             <input
               type="number"
               name="phonenumber"
@@ -148,7 +149,7 @@ const ContactUsForm = () => {
             {errors.phoneNo.message}
           </span>
         )}
-      </div>
+      </div> */}
 
       <div className="flex flex-col gap-2">
         <label htmlFor="message" className="lable-style">

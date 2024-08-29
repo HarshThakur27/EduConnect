@@ -115,5 +115,4 @@ function UpdatePassword() {
     </div>
   )
 }
-
 export default UpdatePassword
