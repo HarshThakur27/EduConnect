@@ -64,22 +64,7 @@ const otpTemplate = (otp) => {
 	
 	</head>
 	
-	// <body>
-	// 	<div class="container">
-	// 		<a href="https://studynotion-edtech-project.vercel.app"></a>
-	// 		<div class="message">OTP Verification Email</div>
-	// 		<div class="body">
-	// 			<p>Dear User,</p>
-	// 			<p>Thank you for registering with Studynotion. To complete your registration, please use the following OTP
-	// 				(One-Time Password) to verify your account:</p>
-	// 			<h2 class="highlight">${otp}</h2>
-	// 			<p>This OTP is valid for 5 minutes. If you did not request this verification, please disregard this email.
-	// 			Once your account is verified, you will have access to our platform and its features.</p>
-	// 		</div>
-	// 		<div class="support">If you have any questions or need assistance, please feel free to reach out to us at <a
-	// 				href="mailto:info@studynotion.com">info@studynotion.com</a>. We are here to help!</div>
-	// 	</div>
-	// </body>
+
  <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px;">
   <div class="container" style="max-width: 600px; background-color: #ffffff; margin: 0 auto; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
     <div style="text-align: center; margin-bottom: 20px;">
@@ -91,7 +76,7 @@ const otpTemplate = (otp) => {
     <div class="body" style="color: #333333;">
       <p>Dear User,</p>
       <p>Thank you for registering with EduConnect. To complete your registration, please use the following OTP (One-Time Password) to verify your account:</p>
-      <h2 class="highlight" style="color: #e63946; font-size: 32px; text-align: center;">${otp}</h2>
+      <h2 class="highlight" style="color: #1d72b8; font-size: 32px; text-align: center;">${otp}</h2>
       <p>This OTP is valid for 5 minutes. If you did not request this verification, please disregard this email. Once your account is verified, you will have access to our platform and its features.</p>
     </div>
     <div class="support" style="margin-top: 30px; text-align: center; color: #666666;">
