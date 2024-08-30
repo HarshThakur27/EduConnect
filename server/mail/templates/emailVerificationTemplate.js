@@ -68,9 +68,7 @@ const otpTemplate = (otp) => {
  <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px;">
   <div class="container" style="max-width: 600px; background-color: #ffffff; margin: 0 auto; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
     <div style="text-align: center; margin-bottom: 20px;">
-      // <a href="https://studynotion-edtech-project.vercel.app" style="text-decoration: none;">
-      //   <img src="https://studynotion-edtech-project.vercel.app/logo.png" alt="StudyNotion" style="max-width: 200px; margin-bottom: 20px;">
-      // </a>
+          
       <h1 style="color: #333333; font-size: 24px;">OTP Verification Email</h1>
     </div>
     <div class="body" style="color: #333333;">
