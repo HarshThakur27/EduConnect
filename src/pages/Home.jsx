@@ -22,7 +22,7 @@ const Home = () => {
         document.body.appendChild(script1);
 
         const script2 = document.createElement("script");
-        script2.src = "https://mediafiles.botpress.cloud/dccf8a18-40b9-4193-b625-d8754b2843e4/webchat/v2.1/config.js";
+        script2.src = "https://mediafiles.botpress.cloud/aceab273-a8af-4a4c-acc1-11ded0efcd93/webchat/v2.1/config.js";
         script2.async = true;
         document.body.appendChild(script2);
 
